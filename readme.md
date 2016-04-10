@@ -428,3 +428,9 @@ python manage.py runserver
 
 
 		}
+
+/*Exotel API*/
+##Sending a SMS Reply in response to an Incoming SMS  
+	HTTP Request (from Exotel to your URL)
+	GET /exotel.php?SmsSid=xxxxxx&From=9052161119&To=56070&Date=xxxxx&Body=Hello+World  
+	HTTP/1.1
