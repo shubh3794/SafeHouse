@@ -1,5 +1,5 @@
-Working_URL:http://f62016e9.ngrok.io#
-Presentation_URL: http://prezi.com/e3mdfoisyaj6/?utm_campaign=share&utm_medium=copy#
+Working_URL: http://f62016e9.ngrok.io  
+Presentation_URL: http://prezi.com/e3mdfoisyaj6/?utm_campaign=share&utm_medium=copy
 
 ###Setup! First thing : 
  on ubuntu or mac terminal run gedit /etc/hosts/
