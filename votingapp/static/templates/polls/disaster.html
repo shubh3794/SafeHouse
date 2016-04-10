@@ -1,0 +1,31 @@
+<div class="jumbotron col s12 m12 l12">
+  <div ng-include="'static/templates/polls/navbar.html'"></div>
+ </div>
+ <div id="defaultV">
+<h4>Report a disaster near you</h4>
+      <form ng-submit="create" name="myForm">
+    <span>Name</span><br>
+    <input type = 'text' name = 'newques' id = 'newques' maxlength="2000" ng-model="questionModel"required/>
+    <span>Description</span><br>
+    <input type = 'text' name = 'newques' id = 'newques' maxlength="2000" ng-model="questionDesc"required/>
+    <br>
+    <br>
+    <select material-select ng-model="questionType">
+      <option value="">Type</option>
+      <option value="Natural">Natural</option>
+      <option value="Terrorism">Terrorism</option>
+    </select>
+<br>
+<br>
+<span>Location</span><br>
+    <input type = 'text' name = 'newques' id = 'newques' maxlength="2000" ng-model="questionCity" required/>
+    <br>
+
+    
+        <button class="btn waves-effect waves-light deep-orange darken-4" type="submit" ng-click="getLocation()">Submit
+    <i class="material-icons right">send</i></button>
+    </form>
+    <br>
+    <br>
+    <div ng-if="message != null && message != undefined" class="notifier">{{message}}</div>
+      </div>

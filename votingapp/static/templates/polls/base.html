@@ -1,0 +1,32 @@
+<div class="jumbotron col s12 m12 l12">
+  <div ng-include="'static/templates/polls/navbar.html'"></div>
+<div id="tinted-image" class="col s12 m12 l12 valign-wrapper">
+<p class="valign center-align">Stay safe with SafeHouse<br/><span class="center-align"id="valign2">Simple&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Easily Available&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Fast<br/></span></p><br>
+</div>
+</div>
+<div class="container">
+<div class="content">
+
+<div ng-if="Disaster">
+<h5 id="defaultV">Recently reported Disasters with high priority</h4>
+<ul class="collection">
+    <li class="collection-item avatar" ng-repeat="disaster in Disaster track by $index">
+      <span class="title big">{{ disaster.disaster_name}}</span>
+       <span class="secondary-content">
+       <a class="tooltipped" data-tooltip="View" title="View?" ng-href="/detail/{{disaster.id}}/">
+       <b>Are you safe?</b>
+       </a>&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;
+       <a class="tooltipped" data-tooltip="View" title="View?" ng-href="http://floating-oasis-80447.herokuapp.com/users?city={{disaster.disaster_city}}">
+       <b>Get Help</b>
+       </a>
+       </span>        
+    </li>
+</ul>
+</div>
+    <p ng-if="Disaster==undefined">No Disaster are available. Please try again</p>
+
+
+</div>
+
+</div>
